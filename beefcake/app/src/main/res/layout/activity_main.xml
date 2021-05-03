@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/drawerLayout">
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <fragment
+                            android:id="@+id/nav_host_fragment"
+                            android:name="androidx.navigation.fragment.NavHostFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:defaultNavHost="true"
+                            app:navGraph="@navigation/navigation"
+                            tools:layout_editor_absoluteX="166dp"
+                            tools:layout_editor_absoluteY="336dp" />
+
+                        <com.google.android.material.bottomnavigation.BottomNavigationView
+                            android:id="@+id/bottom_navigation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:background="#0d47a1"
+                            app:itemTextColor="@color/white"
+                            app:itemIconTint="@color/white"
+                            app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:menu="@menu/bottomnavigation"
+                            />
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                <com.google.android.material.navigation.NavigationView
+                    android:id="@+id/navView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:theme="@style/ThemeOverlay.MaterialComponents.Toolbar.Primary"
+                    app:headerLayout="@layout/header"
+                    app:menu="@menu/left_menu" />
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

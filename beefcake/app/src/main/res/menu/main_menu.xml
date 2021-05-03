@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/workouts"
+            android:icon="@drawable/outline_fitness_center_24"
+            android:title="Workouts" />
+        <item
+            android:id="@+id/equipment"
+            android:icon="@drawable/outline_list_24"
+            android:title="Equipment" />
+        <item
+            android:id="@+id/booke_room"
+            android:icon="@drawable/outline_schedule_24"
+            android:title="Book Room" />
+        <item
+            android:id="@+id/health_profile"
+            android:icon="@drawable/outline_monitor_weight_20"
+            android:title="Health Profile" />
+    </group>
+
+</menu>

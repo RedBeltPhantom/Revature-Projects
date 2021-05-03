@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="time_arr">
+        <item>5:00am</item>
+        <item>6:00am</item>
+        <item>7:00am</item>
+        <item>8:00am</item>
+        <item>9:00am</item>
+        <item>10:00am</item>
+        <item>11:00am</item>
+        <item>12:00pm</item>
+        <item>1:00pm</item>
+        <item>2:00pm</item>
+        <item>3:00pm</item>
+        <item>4:00pm</item>
+        <item>5:00pm</item>
+        <item>6:00pm</item>
+        <item>7:00pm</item>
+        <item>8:00pm</item>
+        <item>9:00pm</item>
+    </string-array>
+
+    <string-array name="equipment_arr">
+        <item>Benchpress</item>
+        <item>Treadmill</item>
+        <item>Freeweights</item>
+        <item>Olympic Bar</item>
+        <item>Leg Curl Extension</item>
+        <item>Dumbell Stand</item>
+        <item>Cables</item>
+        <item>Smith Machine</item>
+        <item>Leg Press Hack Squad Hammer</item>
+        <item>Stair Master</item>
+        <item>Gym Bike</item>
+        <item>Lat Pulling Down</item>
+        <item>Incline Benchpress</item>
+        <item>Hack Squat</item>
+        <item>Cable Cross</item>
+        <item>Excercise Ball</item>
+        <item>Punching Bag</item>
+        <item>Preacher Curl Bench</item>
+    </string-array>
+
+
+    <string name="find_rooms">Find Rooms</string>
+    <string name="select_a_room">Select a room</string>
+    <string name="select_room">Select Room</string>
+    <string name="select_time">Select Time</string>
+    <string name="room_1">Room 1</string>
+</resources>

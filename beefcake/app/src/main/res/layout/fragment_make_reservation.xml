@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.reservation.fragments.MakeReservationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/tv_reservation_equipment"
+        android:layout_width="86dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="32dp"
+        android:text="Select Equipment"
+        app:layout_constraintBaseline_toBaselineOf="@+id/spn_SelectEquipment"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spn_SelectEquipment"
+        android:layout_width="209dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="36dp"
+        android:entries="@array/equipment_arr"
+        android:spinnerMode="dropdown"
+        android:text="@string/select_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spn_SelectTime" />
+
+    <Spinner
+        android:id="@+id/spn_SelectTime"
+        android:layout_width="209dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="28dp"
+        android:entries="@array/time_arr"
+        android:spinnerMode="dropdown"
+        android:text="@string/select_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <Button
+        android:id="@+id/btnFindRooms"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="243dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="96dp"
+        android:text="@string/find_rooms"
+        android:textColor="#1E7FE9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spn_SelectEquipment"
+        app:rippleColor="#bbdefb"
+        app:strokeColor="#074991" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:dateTextAppearance="@style/CalendarViewDateCustomText"
+        android:theme="@style/CalenderViewCustom"
+        android:weekDayTextAppearance="@style/CalendarViewWeekCustomText"
+        app:layout_constraintBottom_toTopOf="@+id/spn_SelectTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.117"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_reservation_time"
+        android:layout_width="79dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/select_time"
+        app:layout_constraintBaseline_toBaselineOf="@+id/spn_SelectTime"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

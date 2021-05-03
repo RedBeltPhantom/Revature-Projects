@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+        <variable
+            name = "viewModel"
+            type ="com.reavature.beefcake.ui.reservation.viewmodel.RoomListViewModel" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:foregroundGravity="center"
+    >
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/room_list_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="com.reavature.beefcake.ui.reservation.RoomLinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:listData="@{viewModel.properties.body()}"
+        tools:listitem="@layout/room_list_item"
+        android:background="@color/cardview_shadow_end_color"
+        android:backgroundTint="@color/white"
+        
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

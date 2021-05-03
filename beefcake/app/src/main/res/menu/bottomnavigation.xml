@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group>
+        <item
+            android:id="@+id/mainMenu"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/home"
+            android:textColor ="@color/white"
+            />
+        <item
+            android:id="@+id/makeReservationFragment"
+            android:icon="@drawable/outline_schedule_24"
+            android:title="@string/reserve"
+            android:textColor ="@color/white"
+            />
+        <item
+            android:id="@+id/healthProfile"
+            android:icon="@drawable/outline_monitor_weight_20"
+            android:title="@string/profile"
+            android:textColor ="@color/white"
+            />
+        <item
+            android:id="@+id/muscleGroups"
+            android:icon="@drawable/outline_fitness_center_24"
+            android:title="@string/workouts"
+            android:textColor ="@color/white"
+            />
+
+        <item
+            android:id="@+id/equipmentList"
+            android:icon="@drawable/outline_list_24"
+            android:title="@string/equipment"
+            android:textColor ="@color/white"
+            />
+
+    </group>
+
+</menu>

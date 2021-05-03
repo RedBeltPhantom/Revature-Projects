@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_workouts"
+            android:icon="@drawable/outline_fitness_center_24"
+            android:title="@string/workout" />
+        <item
+            android:id="@+id/nav_reserve"
+            android:icon="@drawable/outline_schedule_24"
+            android:title="@string/reserve_room" />
+        <item
+            android:id="@+id/nav_equipments"
+            android:icon="@drawable/outline_list_24"
+            android:title="@string/list_equipment" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/outline_monitor_weight_20"
+                android:title="@string/health_profile" />
+            <item
+                android:id="@+id/nav_logOut"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+</menu>
